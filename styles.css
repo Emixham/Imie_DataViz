@@ -1,0 +1,26 @@
+body{
+	background-color: #71bf44;
+}
+
+h1 { font-family: Anton; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Anton; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Anton; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Anton; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Anton; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
+
+.logo {
+
+    max-width: none;
+    max-height: 3.125rem;
+    float: right;
+
+}
+
+.title{
+
+	color: #273848;
+	padding: 50px 50px 0;
+	position: relative;
+	margin-top: 30px;
+	margin-left: 70px;
+	font-size: 50px;
+}
+
+
+
