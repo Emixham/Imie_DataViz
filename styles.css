@@ -5,21 +5,71 @@ body{
 h1 { font-family: Anton; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: Anton; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: Anton; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: Anton; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Anton; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
 
 .logo {
-
     max-width: none;
     max-height: 3.125rem;
     float: right;
+	margin-top: -30px;
 
+
+}
+
+.blockTitle{
+	display: flex;
+	margin-top: 50px;
+	margin-left: 130px;
+}
+
+.pointerTitle{
+	width: 50px;
+	height: 50px;
+	transform: rotate(320deg);
+	margin-top: 23px;
 }
 
 .title{
 
 	color: #273848;
-	padding: 50px 50px 0;
 	position: relative;
-	margin-top: 30px;
-	margin-left: 70px;
 	font-size: 50px;
+}
+
+.subtitle{
+	color: #3f5366;
+	font-size: 25px;
+	font-style: italic;
+	margin-left: 190px;
+	margin-top: -10px;
+
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #457728;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 3px solid #457728;
+}
+
+.line{
+	border-top: 3px solid #457728;
+	width: 420px;
+	margin-top:37px;
+}
+
+.line2{
+	border-top: 3px solid #457728;
+	width: 150px;
+	margin-top:-5px;
+	margin-left: 7px;
+	transform: rotate(330deg);
 }
 
 
