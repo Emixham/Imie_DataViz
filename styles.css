@@ -48,28 +48,45 @@ h1 { font-family: Anton; font-size: 24px; font-style: normal; font-variant: norm
   background-color: #fff;
   border-radius: 50%;
   border: 3px solid #457728;
+  position: absolute;
+  margin: -42px 0 0 737px;
 }
 
-.dot {
+.dot2 {
   height: 10px;
   width: 10px;
   background-color: #fff;
   border-radius: 50%;
   border: 3px solid #457728;
+  position: absolute;
+  margin: -113px 0 0 1365px;
 }
 
 .line{
 	border-top: 3px solid #457728;
-	width: 420px;
+	width: 500px;
 	margin-top:37px;
+	position: absolute;
+	margin: -35px 0 0 752px;
 }
 
 .line2{
 	border-top: 3px solid #457728;
-	width: 150px;
+	width: 140px;
 	margin-top:-5px;
 	margin-left: 7px;
 	transform: rotate(330deg);
+	position: absolute;
+	margin: -69px 0 0 1241px;
+}
+
+.diag{
+	transform: rotate(300deg);
+	border-top: 3px solid #5e9c3a;
+	width: 25px;
+	margin-left:-18px;
+	position: relative;
+	display: inline-block;
 }
 
 
