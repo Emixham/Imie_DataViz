@@ -89,5 +89,29 @@ h1 { font-family: Anton; font-size: 24px; font-style: normal; font-variant: norm
 	display: inline-block;
 }
 
+.velobi{
+    width: 300px;
+}
+
+.blockVeloBi{
+	position: absolute;
+	margin: 30px 0 0 1050px;
+}
+
+.littleCycle{ 
+	color: #fd3c00;
+	font-size: 30px;
+	font-weight: bold;
+	margin-top: -2px;
+	margin-left: 3px;
+ }
+
+ .largeCycle{ 
+	color: #fd3c00;
+	font-size: 90px;
+	font-weight: bold;
+	margin-top: -2px;
+	margin-left: 3px;
+ }
 
 

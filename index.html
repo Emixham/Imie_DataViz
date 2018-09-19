@@ -6,6 +6,37 @@
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Anton" />
+	<html>
+	<script>
+		function includeHTML() {
+		  var z, i, elmnt, file, xhttp;
+		  /*loop through a collection of all HTML elements:*/
+		  z = document.getElementsByTagName("*");
+		  for (i = 0; i < z.length; i++) {
+		    elmnt = z[i];
+		    /*search for elements with a certain atrribute:*/
+		    file = elmnt.getAttribute("w3-include-html");
+		    if (file) {
+		      /*make an HTTP request using the attribute value as the file name:*/
+		      xhttp = new XMLHttpRequest();
+		      xhttp.onreadystatechange = function() {
+		        if (this.readyState == 4) {
+		          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+		          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+		          /*remove the attribute, and call this function once more:*/
+		          elmnt.removeAttribute("w3-include-html");
+		          includeHTML();
+		        }
+		      }      
+		      xhttp.open("GET", file, true);
+		      xhttp.send();
+		      /*exit the function:*/
+		      return;
+		    }
+		  }
+		};
+	</script>
+	
 </head>
 <body>
 
@@ -65,11 +96,45 @@
 
 
 
-		<p style="position: absolute; font-size: 100px; color:white; margin-left: 25px">8</p>	
-		<p style="transform: rotate(90deg); position: absolute;  font-size: 45px; margin: 115px 0 0 70px; color:white">km</p>
 
+
+		<div style="margin-left: 50px;">
+			<p style="position: absolute; font-size: 150px; color:white; margin-left: 25px">8</p>	
+			<p style="transform: rotate(90deg); position: absolute;  font-size: 45px; margin: 125px 0 0 90px; color:white">km</p>
+			<p style="position: absolute; font-size: 65px; color:#fd3c00; margin:180px 0 0 70px"> de moyenne</p>
+		</div>
+
+		<!-- <div w3-include-html="bike.html"></div> --> 
 	
+
+
+		<div class="blockVeloBi">
+			<img src="images/velobi.png" class="velobi">
+			<div class="littleCycle">
+				<span style="margin: -83px 0 0 -10px; transform: rotate(125deg); position: absolute; color: white;">0</span>
+				<span style="margin: -91px 0 0 5px; transform: rotate(-17deg); position: absolute;color: white;">,</span>
+				<span style="margin: -95px 0 0 12px; transform: rotate(-20deg); position: absolute;color: white;">5</span>
+				<span style="margin: -93px 0 0 37px; transform: rotate(17deg); position: absolute;">k</span>
+				<span style="margin: -79px 0 0 51px; transform: rotate(49deg); position: absolute;">m</span>
+			</div>
+
+			<div class="largeCycle">
+				<span style="margin: -221px 0 0 300px; transform: rotate(69deg); position: absolute; color: white;">4</span>
+				<span style="margin: -174px 0 0 311px; transform: rotate(90deg); position: absolute;color: white;">0</span>
+				<span style="margin: -110px 0 0 300px; transform: rotate(114deg); position: absolute;">k</span>
+				<span style="margin: -50px 0 0 246px; transform: rotate(135deg); position: absolute;">m</span>
+			</div>
+		</div>
+		
 
 
 </body>
 </html>
+
+
+<script>
+	includeHTML();
+</script>
+
+
+
